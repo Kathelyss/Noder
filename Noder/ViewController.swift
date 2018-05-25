@@ -21,7 +21,7 @@ class ViewController: NSViewController {
     @IBOutlet var tableView: NSTableView!
     
     @IBAction func tapAddNode(_ sender: NSButton) {
-        
+        //ы
     }
     
     override func viewDidLoad() {
