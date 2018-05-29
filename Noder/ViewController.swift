@@ -24,14 +24,20 @@ class ViewController: NSViewController {
         if let node = createNode() {
             nodes.append(node)
             fileProcessor.setNodes(array: nodes)
-            //print into table view
+            tableView.reloadData()
         } else {
             print("Error! No needed data to add node")
         }
     }
     
-    @IBAction func tapAddEdgesButton(_ sender: NSButton) {
+    @IBAction func tapDeleteLastNodeButton(_ sender: NSButton) {
+        if var storedNodes = fileProcessor.getNodes() {
+            storedNodes.removeLast()
+            fileProcessor.setNodes(array: storedNodes)
+            reloadNodes()
+        }
     }
+
     
     func createNode() -> Node? {
         let name = nameTextField.stringValue
@@ -47,15 +53,15 @@ class ViewController: NSViewController {
     }
     
     func reloadNodes() {
-        if let oldNodes = fileProcessor.getNodes() {
-            nodes = oldNodes
+        if let storedNodes = fileProcessor.getNodes() {
+            nodes = storedNodes
+            tableView.reloadData()
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         reloadNodes()
-        //tabelview.reloaddata
     }
     
     override var representedObject: Any? {
@@ -64,17 +70,21 @@ class ViewController: NSViewController {
         }
     }
     
-    
 }
 
 extension ViewController: NSTableViewDataSource {
-    func tableView(_ tableView: NSTableView, dataCellFor tableColumn: NSTableColumn?, row: Int) -> NSCell? {
-        <#code#>
+    func numberOfRows(in tableView: NSTableView) -> Int {
+        return nodes.count
+    }
+    
+    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        let item = (nodes)[row]
+        let cell = tableView.makeView(withIdentifier: tableColumn!.identifier, owner: self) as? NSTableCellView
+        cell?.textField?.stringValue = item.description
+        return cell
     }
 }
 
 extension ViewController: NSTableViewDelegate {
-    func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
-        return CGFloat(50)
-    }
+
 }

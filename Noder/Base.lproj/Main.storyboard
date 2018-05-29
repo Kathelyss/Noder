@@ -631,9 +631,9 @@
                                     </items>
                                 </menu>
                             </menuItem>
-                            <menuItem title="Window" id="aUF-d1-5bR">
+                            <menuItem title="Создание Вершин Графа" id="aUF-d1-5bR">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">
+                                <menu key="submenu" title="Создание Вершин Графа" systemMenu="window" id="Td7-aD-5lo">
                                     <items>
                                         <menuItem title="Minimize" keyEquivalent="m" id="OY7-WF-poV">
                                             <connections>
@@ -706,11 +706,11 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Noder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="329"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="337"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MoG-1a-3Lw">
-                                <rect key="frame" x="18" y="290" width="82" height="19"/>
+                                <rect key="frame" x="18" y="298" width="82" height="19"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Имя (номер):" id="P7n-tL-BXt">
                                     <font key="font" size="13" name="HelveticaNeue"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -718,7 +718,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="252" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IkF-66-I9R">
-                                <rect key="frame" x="18" y="251" width="80" height="19"/>
+                                <rect key="frame" x="18" y="259" width="80" height="19"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Координаты" id="FLy-ro-8tQ">
                                     <font key="font" size="13" name="HelveticaNeue"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -726,7 +726,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="252" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Kzq-7c-02Z">
-                                <rect key="frame" x="186" y="251" width="15" height="19"/>
+                                <rect key="frame" x="186" y="259" width="15" height="19"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="y:" id="hBe-GB-FJf">
                                     <font key="font" size="13" name="HelveticaNeue"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -734,7 +734,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="252" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JUd-va-9KA">
-                                <rect key="frame" x="109" y="251" width="15" height="19"/>
+                                <rect key="frame" x="109" y="259" width="15" height="19"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="x:" id="jGQ-YL-cb6">
                                     <font key="font" size="13" name="HelveticaNeue"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -742,7 +742,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Qcj-pt-7Gn">
-                                <rect key="frame" x="18" y="212" width="41" height="19"/>
+                                <rect key="frame" x="18" y="220" width="41" height="19"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Этаж:" id="jA7-lh-3we">
                                     <font key="font" size="13" name="HelveticaNeue"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -750,7 +750,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cO7-7k-dHW">
-                                <rect key="frame" x="114" y="289" width="143" height="22"/>
+                                <rect key="frame" x="114" y="297" width="143" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="vCy-FY-AMG">
                                     <font key="font" size="13" name="HelveticaNeue"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -758,7 +758,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Zea-iA-Ywv">
-                                <rect key="frame" x="130" y="250" width="50" height="22"/>
+                                <rect key="frame" x="130" y="258" width="50" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Pzl-ig-1zP"/>
                                 </constraints>
@@ -769,7 +769,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iir-Ub-aZG">
-                                <rect key="frame" x="207" y="250" width="50" height="22"/>
+                                <rect key="frame" x="207" y="258" width="50" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="APJ-rz-vWp"/>
                                 </constraints>
@@ -780,7 +780,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nfO-qE-ycf">
-                                <rect key="frame" x="114" y="211" width="143" height="22"/>
+                                <rect key="frame" x="114" y="219" width="143" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="Tc4-hJ-38d">
                                     <font key="font" size="13" name="HelveticaNeue"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -788,7 +788,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3gs-hg-BL1">
-                                <rect key="frame" x="14" y="134" width="249" height="32"/>
+                                <rect key="frame" x="14" y="142" width="249" height="32"/>
                                 <buttonCell key="cell" type="push" title="Добавить вершину" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gW0-Ay-sMi">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -797,26 +797,36 @@
                                     <action selector="tapAddNode:" target="XfG-lQ-9wD" id="xpV-e8-PdQ"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Roy-Zo-ws5">
+                                <rect key="frame" x="14" y="13" width="249" height="32"/>
+                                <buttonCell key="cell" type="push" title="Добавить рёбра" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GUa-hI-vsY">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="7F3-gD-AsA" kind="modal" id="r9Q-qt-dy0"/>
+                                </connections>
+                            </button>
                             <scrollView borderType="groove" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROz-13-9NQ">
-                                <rect key="frame" x="271" y="20" width="309" height="291"/>
+                                <rect key="frame" x="275" y="20" width="305" height="299"/>
                                 <clipView key="contentView" id="y6y-RK-sLT">
-                                    <rect key="frame" x="2" y="2" width="305" height="287"/>
+                                    <rect key="frame" x="2" y="2" width="301" height="295"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="tGM-JT-drj" viewBased="YES" id="ljS-Eq-zDp">
-                                            <rect key="frame" x="0.0" y="0.0" width="305" height="264"/>
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="none" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="tGM-JT-drj" viewBased="YES" id="ljS-Eq-zDp">
+                                            <rect key="frame" x="0.0" y="0.0" width="305" height="272"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn identifier="" width="302" minWidth="40" maxWidth="1000" id="aGL-w9-gj8">
-                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
+                                                <tableColumn identifier="Node" width="302" minWidth="40" maxWidth="1000" id="aGL-w9-gj8">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Добавленные Вершины">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                     </tableHeaderCell>
-                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="LxF-75-nRs">
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" borderStyle="border" title="Text Cell" drawsBackground="YES" id="LxF-75-nRs">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -830,7 +840,7 @@
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FaQ-hL-jYp">
                                                                     <rect key="frame" x="0.0" y="0.0" width="302" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="DGO-Qs-H3O">
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" identifier="Node" title="Table View Cell" id="DGO-Qs-H3O">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -851,11 +861,8 @@
                                         </tableView>
                                     </subviews>
                                 </clipView>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="309" id="kex-by-tP4"/>
-                                </constraints>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="ucQ-il-B6M">
-                                    <rect key="frame" x="2" y="275" width="305" height="16"/>
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="ucQ-il-B6M">
+                                    <rect key="frame" x="2" y="281" width="301" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="3eN-wx-j2J">
@@ -867,32 +874,34 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableHeaderView>
                             </scrollView>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Roy-Zo-ws5">
-                                <rect key="frame" x="14" y="13" width="249" height="32"/>
-                                <buttonCell key="cell" type="push" title="Добавить рёбра" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GUa-hI-vsY">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0iN-mC-bzk">
+                                <rect key="frame" x="14" y="101" width="249" height="32"/>
+                                <buttonCell key="cell" type="push" title="Удалить последнюю вершину" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="U2B-dr-2tr">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="tapAddEdgesButton:" target="XfG-lQ-9wD" id="T85-Vq-e5n"/>
+                                    <action selector="tapDeleteLastNodeButton:" target="XfG-lQ-9wD" id="eQr-yo-hiv"/>
                                 </connections>
                             </button>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ROz-13-9NQ" secondAttribute="trailing" constant="20" id="0Kj-aj-Aib"/>
                             <constraint firstItem="Roy-Zo-ws5" firstAttribute="leading" secondItem="3gs-hg-BL1" secondAttribute="leading" id="2F7-LM-Zxx"/>
-                            <constraint firstItem="ljS-Eq-zDp" firstAttribute="leading" secondItem="iir-Ub-aZG" secondAttribute="trailing" constant="16" id="32W-xh-frG"/>
+                            <constraint firstItem="ljS-Eq-zDp" firstAttribute="leading" secondItem="iir-Ub-aZG" secondAttribute="trailing" constant="20" id="32W-xh-frG"/>
                             <constraint firstItem="cO7-7k-dHW" firstAttribute="leading" secondItem="MoG-1a-3Lw" secondAttribute="trailing" constant="16" id="6bO-kC-O69"/>
                             <constraint firstItem="nfO-qE-ycf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Qcj-pt-7Gn" secondAttribute="trailing" constant="16" id="AUs-jB-BDT"/>
                             <constraint firstItem="MoG-1a-3Lw" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="BID-6p-dMR"/>
+                            <constraint firstItem="0iN-mC-bzk" firstAttribute="top" secondItem="3gs-hg-BL1" secondAttribute="bottom" constant="20" id="BXk-i3-vD4"/>
                             <constraint firstItem="MoG-1a-3Lw" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="DzS-YI-xCO"/>
+                            <constraint firstItem="Roy-Zo-ws5" firstAttribute="top" secondItem="0iN-mC-bzk" secondAttribute="bottom" constant="67" id="Hmh-aL-Zgi"/>
                             <constraint firstItem="iir-Ub-aZG" firstAttribute="trailing" secondItem="nfO-qE-ycf" secondAttribute="trailing" id="I7L-xt-TAb"/>
-                            <constraint firstItem="Roy-Zo-ws5" firstAttribute="top" secondItem="3gs-hg-BL1" secondAttribute="bottom" constant="100" id="IPQ-KP-QBF"/>
-                            <constraint firstItem="tGM-JT-drj" firstAttribute="leading" secondItem="cO7-7k-dHW" secondAttribute="trailing" constant="20" id="Kra-e8-gl3"/>
                             <constraint firstItem="3gs-hg-BL1" firstAttribute="top" secondItem="Qcj-pt-7Gn" secondAttribute="bottom" constant="50" id="Mef-0H-huO"/>
                             <constraint firstItem="IkF-66-I9R" firstAttribute="top" secondItem="MoG-1a-3Lw" secondAttribute="bottom" constant="20" id="NTq-OG-CqH"/>
+                            <constraint firstItem="0iN-mC-bzk" firstAttribute="leading" secondItem="3gs-hg-BL1" secondAttribute="leading" id="OCb-U1-CBM"/>
                             <constraint firstItem="3gs-hg-BL1" firstAttribute="leading" secondItem="Qcj-pt-7Gn" secondAttribute="leading" id="Oqm-bx-JTy"/>
                             <constraint firstItem="MoG-1a-3Lw" firstAttribute="centerY" secondItem="cO7-7k-dHW" secondAttribute="centerY" id="PSZ-PU-ACu"/>
+                            <constraint firstItem="0iN-mC-bzk" firstAttribute="trailing" secondItem="3gs-hg-BL1" secondAttribute="trailing" id="SCI-P8-lwy"/>
                             <constraint firstItem="Kzq-7c-02Z" firstAttribute="leading" secondItem="Zea-iA-Ywv" secondAttribute="trailing" constant="8" id="WbP-5f-jSD"/>
                             <constraint firstItem="iir-Ub-aZG" firstAttribute="leading" secondItem="Kzq-7c-02Z" secondAttribute="trailing" constant="8" id="XaG-uJ-wwz"/>
                             <constraint firstItem="Zea-iA-Ywv" firstAttribute="leading" secondItem="JUd-va-9KA" secondAttribute="trailing" constant="8" id="dy5-Xj-6bU"/>
@@ -924,7 +933,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="74" y="741"/>
         </scene>
         <!--EdgesVC-->
         <scene sceneID="mUm-mt-ICb">
@@ -1117,11 +1126,12 @@
                         <outlet property="edgeWeight" destination="crs-lx-Rmn" id="YjL-CG-Z8Z"/>
                         <outlet property="firstNodeTextField" destination="9d3-zf-fuQ" id="x1a-cF-BVV"/>
                         <outlet property="secondNodeTextField" destination="5yS-Ue-zmq" id="lYr-28-vvM"/>
+                        <outlet property="tableView" destination="bfk-ID-Tdn" id="iyT-Au-qr2"/>
                     </connections>
                 </viewController>
                 <customObject id="cZL-K2-iqK" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74" y="1069"/>
+            <point key="canvasLocation" x="74" y="1167"/>
         </scene>
     </scenes>
 </document>

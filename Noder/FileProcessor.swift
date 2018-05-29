@@ -36,7 +36,7 @@ class FileProcessor {
         if let data = try? Data(contentsOf: url) {
             let decoder = PropertyListDecoder()
             let array: [Node]? = try? decoder.decode([Node].self, from: data)
-            print(array)
+//            print(array)
             return array
         }
         return nil

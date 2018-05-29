@@ -14,12 +14,15 @@ class EdgesVC: NSViewController {
     @IBOutlet var edgeLength: NSTextField!
     @IBOutlet var edgeWeight: NSTextField!
     
+    @IBOutlet var tableView: NSScrollView!
+    
     @IBAction func tapAddEdgeButton(_ sender: NSButton) {
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Создание Рёбер Графа"
     }
     
 }
