@@ -9,18 +9,14 @@
 import Cocoa
 
 class ViewController: NSViewController {
-    @IBOutlet var indexTextField: NSTextField!
     @IBOutlet var nameTextField: NSTextField!
     @IBOutlet var xTextField: NSTextField!
     @IBOutlet var yTextField: NSTextField!
     @IBOutlet var floorTextField: NSTextField!
-    @IBOutlet var connectionNodeTextField: NSTextField!
-    @IBOutlet var edgeLength: NSTextField!
-    @IBOutlet var edgeWeight: NSTextField!
     
     @IBOutlet var tableView: NSTableView!
     
-    let fileProcessor = FileProcessor(fileName: "plistik")
+    let fileProcessor = FileProcessor(fileName: "nodes.plist")
     var nodes: [Node] = []
     
     @IBAction func tapAddNode(_ sender: NSButton) {
@@ -32,6 +28,9 @@ class ViewController: NSViewController {
         } else {
             print("Error! No needed data to add node")
         }
+    }
+    
+    @IBAction func tapAddEdgesButton(_ sender: NSButton) {
     }
     
     func createNode() -> Node? {
@@ -68,3 +67,14 @@ class ViewController: NSViewController {
     
 }
 
+extension ViewController: NSTableViewDataSource {
+    func tableView(_ tableView: NSTableView, dataCellFor tableColumn: NSTableColumn?, row: Int) -> NSCell? {
+        <#code#>
+    }
+}
+
+extension ViewController: NSTableViewDelegate {
+    func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
+        return CGFloat(50)
+    }
+}

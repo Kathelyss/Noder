@@ -13,6 +13,7 @@
 		9402F39720B5D74D0011E324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9402F39520B5D74D0011E324 /* Main.storyboard */; };
 		9402F3A020BB218C0011E324 /* FileProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402F39F20BB218C0011E324 /* FileProcessor.swift */; };
 		9402F3A420BD544E0011E324 /* GraphUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402F3A320BD544E0011E324 /* GraphUnits.swift */; };
+		9402F3A620BD672C0011E324 /* EdgesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402F3A520BD672C0011E324 /* EdgesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		9402F39920B5D74D0011E324 /* Noder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Noder.entitlements; sourceTree = "<group>"; };
 		9402F39F20BB218C0011E324 /* FileProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProcessor.swift; sourceTree = "<group>"; };
 		9402F3A320BD544E0011E324 /* GraphUnits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GraphUnits.swift; path = ../../NavETU/NavETU/Model/GraphUnits.swift; sourceTree = "<group>"; };
+		9402F3A520BD672C0011E324 /* EdgesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				9402F39820B5D74D0011E324 /* Info.plist */,
 				9402F39920B5D74D0011E324 /* Noder.entitlements */,
 				9402F39F20BB218C0011E324 /* FileProcessor.swift */,
+				9402F3A520BD672C0011E324 /* EdgesVC.swift */,
 			);
 			path = Noder;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 				9402F3A420BD544E0011E324 /* GraphUnits.swift in Sources */,
 				9402F39220B5D7490011E324 /* ViewController.swift in Sources */,
 				9402F3A020BB218C0011E324 /* FileProcessor.swift in Sources */,
+				9402F3A620BD672C0011E324 /* EdgesVC.swift in Sources */,
 				9402F39020B5D7490011E324 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
