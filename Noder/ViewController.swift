@@ -20,22 +20,51 @@ class ViewController: NSViewController {
     
     @IBOutlet var tableView: NSTableView!
     
+    let fileProcessor = FileProcessor(fileName: "plistik")
+    var nodes: [Node] = []
+    
     @IBAction func tapAddNode(_ sender: NSButton) {
-        //ы
+        reloadNodes()
+        if let node = createNode() {
+            nodes.append(node)
+            fileProcessor.setNodes(array: nodes)
+            //print into table view
+        } else {
+            print("Error! No needed data to add node")
+        }
+    }
+    
+    func createNode() -> Node? {
+        let name = nameTextField.stringValue
+        let coordX = xTextField.doubleValue
+        let coordY = yTextField.doubleValue
+        let floor = floorTextField.intValue
+        guard name != "", coordX != 0, coordY != 0, floor != 0 else {
+            print("Error! No needed data to create node")
+            return nil
+        }
+        
+        return Node(name: name, coordinates: Point(x: CGFloat(coordX), y: CGFloat(coordY)), floor: Int(floor))
+    }
+    
+    func reloadNodes() {
+        if let oldNodes = fileProcessor.getNodes() {
+            nodes = oldNodes
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        reloadNodes()
+        //tabelview.reloaddata
     }
-
+    
     override var representedObject: Any? {
         didSet {
-        // Update the view, if already loaded.
+            // Update the view, if already loaded.
         }
     }
-
-
+    
+    
 }
 
