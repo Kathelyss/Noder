@@ -791,7 +791,7 @@
                                 <rect key="frame" x="14" y="142" width="249" height="32"/>
                                 <buttonCell key="cell" type="push" title="Добавить вершину" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gW0-Ay-sMi">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" size="13" name="HelveticaNeue"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="tapAddNode:" target="XfG-lQ-9wD" id="xpV-e8-PdQ"/>
@@ -801,7 +801,7 @@
                                 <rect key="frame" x="14" y="13" width="249" height="32"/>
                                 <buttonCell key="cell" type="push" title="Добавить рёбра" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GUa-hI-vsY">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" size="13" name="HelveticaNeue"/>
                                 </buttonCell>
                                 <connections>
                                     <segue destination="7F3-gD-AsA" kind="modal" id="r9Q-qt-dy0"/>
@@ -841,7 +841,7 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="302" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" identifier="Node" title="Table View Cell" id="DGO-Qs-H3O">
-                                                                        <font key="font" metaFont="system"/>
+                                                                        <font key="font" size="13" name="HelveticaNeue"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
@@ -861,7 +861,7 @@
                                         </tableView>
                                     </subviews>
                                 </clipView>
-                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="ucQ-il-B6M">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.25" horizontal="YES" id="ucQ-il-B6M">
                                     <rect key="frame" x="2" y="281" width="301" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -878,7 +878,7 @@
                                 <rect key="frame" x="14" y="101" width="249" height="32"/>
                                 <buttonCell key="cell" type="push" title="Удалить последнюю вершину" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="U2B-dr-2tr">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" size="13" name="HelveticaNeue"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="tapDeleteLastNodeButton:" target="XfG-lQ-9wD" id="eQr-yo-hiv"/>
@@ -940,11 +940,11 @@
             <objects>
                 <viewController id="7F3-gD-AsA" customClass="EdgesVC" customModule="Noder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="dvi-t1-u10">
-                        <rect key="frame" x="0.0" y="0.0" width="550" height="247"/>
+                        <rect key="frame" x="0.0" y="0.0" width="550" height="288"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aG5-qU-iTb">
-                                <rect key="frame" x="18" y="208" width="111" height="19"/>
+                                <rect key="frame" x="18" y="249" width="111" height="19"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Имя 1й вершины:" id="Ugj-Ds-6IK">
                                     <font key="font" size="13" name="HelveticaNeue"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -952,7 +952,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kkA-7C-Ycv">
-                                <rect key="frame" x="18" y="130" width="87" height="19"/>
+                                <rect key="frame" x="18" y="171" width="87" height="19"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Длина ребра:" id="AEa-jF-bBA">
                                     <font key="font" size="13" name="HelveticaNeue"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -960,7 +960,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VfY-8M-NS8">
-                                <rect key="frame" x="18" y="91" width="71" height="19"/>
+                                <rect key="frame" x="18" y="132" width="71" height="19"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Вес ребра:" id="Iaj-Qy-JsD">
                                     <font key="font" size="13" name="HelveticaNeue"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -968,7 +968,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9d3-zf-fuQ">
-                                <rect key="frame" x="143" y="207" width="100" height="22"/>
+                                <rect key="frame" x="143" y="248" width="100" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="qah-SJ-nX5">
                                     <font key="font" size="13" name="HelveticaNeue"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -976,7 +976,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="O5T-KL-56m">
-                                <rect key="frame" x="18" y="169" width="111" height="19"/>
+                                <rect key="frame" x="18" y="210" width="111" height="19"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Имя 2й вершины:" id="SiY-ge-phc">
                                     <font key="font" size="13" name="HelveticaNeue"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -984,7 +984,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5yS-Ue-zmq">
-                                <rect key="frame" x="143" y="168" width="100" height="22"/>
+                                <rect key="frame" x="143" y="209" width="100" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="MAY-PN-k0Z">
                                     <font key="font" size="13" name="HelveticaNeue"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -992,7 +992,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GP9-Eo-2Vw">
-                                <rect key="frame" x="143" y="129" width="100" height="22"/>
+                                <rect key="frame" x="143" y="170" width="100" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="FM0-6R-1Bf"/>
                                 </constraints>
@@ -1003,7 +1003,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="crs-lx-Rmn">
-                                <rect key="frame" x="143" y="90" width="100" height="22"/>
+                                <rect key="frame" x="143" y="131" width="100" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" bezelStyle="round" id="sUa-hK-Up4">
                                     <font key="font" size="13" name="HelveticaNeue"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -1011,30 +1011,30 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Mgf-VD-dOx">
-                                <rect key="frame" x="14" y="13" width="235" height="32"/>
+                                <rect key="frame" x="14" y="54" width="235" height="32"/>
                                 <buttonCell key="cell" type="push" title="Добавить ребро" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5ot-9S-fSB">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" size="13" name="HelveticaNeue"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="tapAddEdgeButton:" target="7F3-gD-AsA" id="uTP-QT-16L"/>
                                 </connections>
                             </button>
                             <scrollView borderType="groove" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfk-ID-Tdn">
-                                <rect key="frame" x="263" y="20" width="267" height="209"/>
+                                <rect key="frame" x="263" y="20" width="267" height="250"/>
                                 <clipView key="contentView" id="2DJ-aR-jV3">
-                                    <rect key="frame" x="2" y="25" width="263" height="182"/>
+                                    <rect key="frame" x="2" y="25" width="263" height="223"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="5rH-Fm-0BG" viewBased="YES" id="TLK-mC-g14">
-                                            <rect key="frame" x="0.0" y="0.0" width="263" height="182"/>
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="5rH-Fm-0BG" viewBased="YES" id="TLK-mC-g14">
+                                            <rect key="frame" x="0.0" y="0.0" width="263" height="223"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn identifier="" width="260" minWidth="40" maxWidth="1000" id="FN2-UO-eeY">
-                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
+                                                <tableColumn identifier="Edge" width="260" minWidth="40" maxWidth="1000" id="FN2-UO-eeY">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Добавленные рёбра">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -1053,8 +1053,8 @@
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cxg-6M-dOW">
                                                                     <rect key="frame" x="0.0" y="23" width="260" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="naH-G9-0eR">
-                                                                        <font key="font" metaFont="system"/>
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" identifier="Edge" title="Table View Cell" id="naH-G9-0eR">
+                                                                        <font key="font" size="13" name="HelveticaNeue"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
@@ -1068,8 +1068,8 @@
                                                 </tableColumn>
                                             </tableColumns>
                                             <connections>
-                                                <outlet property="dataSource" destination="XfG-lQ-9wD" id="mqu-w5-ptP"/>
-                                                <outlet property="delegate" destination="XfG-lQ-9wD" id="qRJ-4B-hnX"/>
+                                                <outlet property="dataSource" destination="7F3-gD-AsA" id="206-JA-Fzg"/>
+                                                <outlet property="delegate" destination="7F3-gD-AsA" id="F3x-R7-nBU"/>
                                             </connections>
                                         </tableView>
                                     </subviews>
@@ -1087,6 +1087,16 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableHeaderView>
                             </scrollView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mMd-iV-d4o">
+                                <rect key="frame" x="14" y="13" width="235" height="32"/>
+                                <buttonCell key="cell" type="push" title="Удалить последнее ребро" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="IOz-fg-yIB">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name="HelveticaNeue"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="tapDeleteLastEdgeButton:" target="7F3-gD-AsA" id="tIk-ld-Bbg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="aG5-qU-iTb" firstAttribute="leading" secondItem="kkA-7C-Ycv" secondAttribute="leading" id="1hy-iY-5NJ"/>
@@ -1095,6 +1105,7 @@
                             <constraint firstItem="5yS-Ue-zmq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="O5T-KL-56m" secondAttribute="trailing" constant="16" id="6FA-Xe-14J"/>
                             <constraint firstItem="VfY-8M-NS8" firstAttribute="top" secondItem="kkA-7C-Ycv" secondAttribute="bottom" constant="20" id="876-h9-2PV"/>
                             <constraint firstItem="bfk-ID-Tdn" firstAttribute="leading" secondItem="GP9-Eo-2Vw" secondAttribute="trailing" constant="20" id="Aei-fr-Eaz"/>
+                            <constraint firstItem="bfk-ID-Tdn" firstAttribute="bottom" secondItem="mMd-iV-d4o" secondAttribute="bottom" id="BsH-mj-fK9"/>
                             <constraint firstItem="GP9-Eo-2Vw" firstAttribute="trailing" secondItem="crs-lx-Rmn" secondAttribute="trailing" id="C1S-7k-bwS"/>
                             <constraint firstItem="aG5-qU-iTb" firstAttribute="centerY" secondItem="9d3-zf-fuQ" secondAttribute="centerY" id="DUy-5I-SPJ"/>
                             <constraint firstItem="Mgf-VD-dOx" firstAttribute="leading" secondItem="VfY-8M-NS8" secondAttribute="leading" id="H0s-1S-Ox6"/>
@@ -1110,11 +1121,13 @@
                             <constraint firstItem="5yS-Ue-zmq" firstAttribute="trailing" secondItem="9d3-zf-fuQ" secondAttribute="trailing" id="TgZ-kd-Zr0"/>
                             <constraint firstItem="Mgf-VD-dOx" firstAttribute="trailing" secondItem="crs-lx-Rmn" secondAttribute="trailing" id="U7u-PG-MbW"/>
                             <constraint firstItem="Mgf-VD-dOx" firstAttribute="top" secondItem="VfY-8M-NS8" secondAttribute="bottom" constant="50" id="VaY-z4-Of0"/>
-                            <constraint firstItem="bfk-ID-Tdn" firstAttribute="bottom" secondItem="Mgf-VD-dOx" secondAttribute="bottom" id="XLc-uG-lME"/>
+                            <constraint firstItem="mMd-iV-d4o" firstAttribute="top" secondItem="Mgf-VD-dOx" secondAttribute="bottom" constant="20" id="ZDx-zG-PN8"/>
+                            <constraint firstItem="mMd-iV-d4o" firstAttribute="trailing" secondItem="Mgf-VD-dOx" secondAttribute="trailing" id="ZtM-DY-29k"/>
+                            <constraint firstAttribute="bottom" secondItem="mMd-iV-d4o" secondAttribute="bottom" constant="20" id="b8Y-Vg-CKR"/>
+                            <constraint firstItem="mMd-iV-d4o" firstAttribute="leading" secondItem="Mgf-VD-dOx" secondAttribute="leading" id="d6K-iq-iJJ"/>
                             <constraint firstAttribute="trailing" secondItem="bfk-ID-Tdn" secondAttribute="trailing" constant="20" id="dZs-g3-ZXF"/>
                             <constraint firstItem="O5T-KL-56m" firstAttribute="top" secondItem="aG5-qU-iTb" secondAttribute="bottom" constant="20" id="eDY-fN-NwZ"/>
                             <constraint firstItem="O5T-KL-56m" firstAttribute="leading" secondItem="aG5-qU-iTb" secondAttribute="leading" id="hhS-AX-Vre"/>
-                            <constraint firstAttribute="bottom" secondItem="Mgf-VD-dOx" secondAttribute="bottom" constant="20" id="hsp-3k-ebQ"/>
                             <constraint firstItem="O5T-KL-56m" firstAttribute="centerY" secondItem="5yS-Ue-zmq" secondAttribute="centerY" id="kUe-FE-nd9"/>
                             <constraint firstItem="aG5-qU-iTb" firstAttribute="leading" secondItem="dvi-t1-u10" secondAttribute="leading" constant="20" id="rQN-Po-iF9"/>
                             <constraint firstItem="crs-lx-Rmn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VfY-8M-NS8" secondAttribute="trailing" constant="16" id="vl9-dD-iqv"/>
@@ -1126,7 +1139,7 @@
                         <outlet property="edgeWeight" destination="crs-lx-Rmn" id="YjL-CG-Z8Z"/>
                         <outlet property="firstNodeTextField" destination="9d3-zf-fuQ" id="x1a-cF-BVV"/>
                         <outlet property="secondNodeTextField" destination="5yS-Ue-zmq" id="lYr-28-vvM"/>
-                        <outlet property="tableView" destination="bfk-ID-Tdn" id="iyT-Au-qr2"/>
+                        <outlet property="tableView" destination="TLK-mC-g14" id="Fby-wy-YRY"/>
                     </connections>
                 </viewController>
                 <customObject id="cZL-K2-iqK" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

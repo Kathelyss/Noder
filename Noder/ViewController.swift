@@ -38,6 +38,11 @@ class ViewController: NSViewController {
         }
     }
 
+    override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
+        if let vc = segue.destinationController as? EdgesVC {
+            vc.fileProcessor = fileProcessor
+        }
+    }
     
     func createNode() -> Node? {
         let name = nameTextField.stringValue
