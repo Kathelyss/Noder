@@ -36,10 +36,32 @@ class FileProcessor {
         if let data = try? Data(contentsOf: url) {
             let decoder = PropertyListDecoder()
             let array: [Node]? = try? decoder.decode([Node].self, from: data)
-//            print(array)
             return array
         }
         return nil
     }
     
+    func setEdges(array: [Edge]) {
+        guard let url = path else { return }
+        
+        let encoder = PropertyListEncoder()
+        encoder.outputFormat = .xml
+        do {
+            let data = try encoder.encode(array)
+            try data.write(to: url)
+        } catch {
+            print(error)
+        }
+    }
+    
+    func getEdges() -> [Edge]? {
+        guard let url = path else { return nil }
+        
+        if let data = try? Data(contentsOf: url) {
+            let decoder = PropertyListDecoder()
+            let array: [Edge]? = try? decoder.decode([Edge].self, from: data)
+            return array
+        }
+        return nil
+    }
 }

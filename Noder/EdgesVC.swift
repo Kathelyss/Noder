@@ -16,51 +16,75 @@ class EdgesVC: NSViewController {
     
     @IBOutlet var tableView: NSTableView!
     
-    var fileProcessor: FileProcessor!
+    var fileProcessor = FileProcessor(fileName: "edges.plist")
+    var edges: [Edge] = []
     var nodes: [Node] = []
     
     @IBAction func tapAddEdgeButton(_ sender: NSButton) {
-        reloadNodes()
-        connectNodes()
-        fileProcessor.setNodes(array: nodes)
-        tableView.reloadData()        
+        reloadEdges()
+        if let edge = createEdge() {
+            edges.append(edge)
+            fileProcessor.setEdges(array: edges)
+            tableView.reloadData()
+        } else {
+            print("Error! No needed data to add edge")
+        }
     }
     
     @IBAction func tapDeleteLastEdgeButton(_ sender: NSButton) {
-        //        if var storedNodes = fileProcessor.getNodes() {
-        //            storedNodes.removeLast() //remove last edited node's edge
-        //            fileProcessor.setNodes(array: storedNodes)
-        //            reloadEdges()
-        //        }
+        if var storedEdges = fileProcessor.getEdges() {
+            storedEdges.removeLast() //remove last edited node's edge
+            fileProcessor.setEdges(array: storedEdges)
+            reloadEdges()
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Создание Рёбер Графа"
-        reloadNodes()
+        reloadEdges()
     }
     
-    func connectNodes() {
+    //    func connectNodes() {
+    //        let firstNodeName = firstNodeTextField.stringValue
+    //        let secondNodeName = secondNodeTextField.stringValue
+    //        let length = edgeLength.intValue
+    //        let weight = edgeWeight.intValue
+    //        guard firstNodeName != "", secondNodeName != "", length != 0 else {
+    //            print("Error! No needed data to create node connection")
+    //            return
+    //        }
+    //        let firstNode = nodes.filter{ $0.name == firstNodeName }.first
+    //        let secondNode = nodes.filter{ $0.name == secondNodeName }.first
+    //        guard let first = firstNode, let second = secondNode else {
+    //            print("Error! There's no such nodes")
+    //            return
+    //        }
+    //        first.connectTo(node: second, edgeLength: Int(length), edgeWeight: Int(weight))
+    //    }
+    
+    func createEdge() -> Edge? {
         let firstNodeName = firstNodeTextField.stringValue
         let secondNodeName = secondNodeTextField.stringValue
         let length = edgeLength.intValue
         let weight = edgeWeight.intValue
-        guard firstNodeName != "", secondNodeName != "", length != 0 else {
-            print("Error! No needed data to create node connection")
-            return
+        guard firstNodeName != "",secondNodeName != "", length != 0, weight != 0 else {
+            print("Error! No needed data to create edge")
+            return nil
         }
         let firstNode = nodes.filter{ $0.name == firstNodeName }.first
         let secondNode = nodes.filter{ $0.name == secondNodeName }.first
         guard let first = firstNode, let second = secondNode else {
             print("Error! There's no such nodes")
-            return
+            return nil
         }
-        first.connectTo(node: second, edgeLength: Int(length), edgeWeight: Int(weight))
+        
+        return Edge(first: first, second: second, length: Int(length), weight: Int(weight))
     }
     
-    func reloadNodes() {
-        if let storedNodes = fileProcessor.getNodes() {
-            nodes = storedNodes
+    func reloadEdges() {
+        if let storedEdges = fileProcessor.getEdges() {
+            edges = storedEdges
             tableView.reloadData()
         }
     }
@@ -69,11 +93,11 @@ class EdgesVC: NSViewController {
 
 extension EdgesVC: NSTableViewDataSource {
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return nodes.count
+        return edges.count
     }
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        let item = (nodes)[row]
+        let item = (edges)[row]
         let cell = tableView.makeView(withIdentifier: tableColumn!.identifier, owner: self) as? NSTableCellView
         cell?.textField?.stringValue = item.description
         return cell
