@@ -17,13 +17,13 @@ class EdgesVC: NSViewController {
     @IBOutlet var tableView: NSTableView!
     
     var fileProcessor = FileProcessor(fileName: "edges.plist")
-    var edges: [Edge] = []
+    var edges: [EdgeSaver] = []
     var nodes: [Node] = []
     
     @IBAction func tapAddEdgeButton(_ sender: NSButton) {
         reloadEdges()
-        if let edge = createEdge() {
-            edges.append(edge)
+        if let edgeDict = createEdgeDictionary() {
+            edges.append(edgeDict)
             fileProcessor.setEdges(array: edges)
             tableView.reloadData()
         } else {
@@ -45,25 +45,7 @@ class EdgesVC: NSViewController {
         reloadEdges()
     }
     
-    //    func connectNodes() {
-    //        let firstNodeName = firstNodeTextField.stringValue
-    //        let secondNodeName = secondNodeTextField.stringValue
-    //        let length = edgeLength.intValue
-    //        let weight = edgeWeight.intValue
-    //        guard firstNodeName != "", secondNodeName != "", length != 0 else {
-    //            print("Error! No needed data to create node connection")
-    //            return
-    //        }
-    //        let firstNode = nodes.filter{ $0.name == firstNodeName }.first
-    //        let secondNode = nodes.filter{ $0.name == secondNodeName }.first
-    //        guard let first = firstNode, let second = secondNode else {
-    //            print("Error! There's no such nodes")
-    //            return
-    //        }
-    //        first.connectTo(node: second, edgeLength: Int(length), edgeWeight: Int(weight))
-    //    }
-    
-    func createEdge() -> Edge? {
+    func createEdgeDictionary() -> EdgeSaver? {
         let firstNodeName = firstNodeTextField.stringValue
         let secondNodeName = secondNodeTextField.stringValue
         let length = edgeLength.intValue
@@ -72,14 +54,11 @@ class EdgesVC: NSViewController {
             print("Error! No needed data to create edge")
             return nil
         }
-        let firstNode = nodes.filter{ $0.name == firstNodeName }.first
-        let secondNode = nodes.filter{ $0.name == secondNodeName }.first
-        guard let first = firstNode, let second = secondNode else {
-            print("Error! There's no such nodes")
-            return nil
-        }
         
-        return Edge(first: first, second: second, length: Int(length), weight: Int(weight))
+        return EdgeSaver(firstNodeName: firstNodeName,
+                         secondNodeName: secondNodeName,
+                         length: Int(length),
+                         weight: Int(weight))
     }
     
     func reloadEdges() {

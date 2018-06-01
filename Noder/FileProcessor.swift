@@ -8,6 +8,16 @@
 
 import Foundation
 
+struct EdgeSaver: Codable, CustomStringConvertible {
+    var firstNodeName: String
+    var secondNodeName: String
+    var length: Int
+    var weight: Int
+    var description: String {
+        return "\(firstNodeName) -> \(secondNodeName), длина \(length)"
+    }
+}
+
 class FileProcessor {
     var fileName: String
     var url: URL? { return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first }
@@ -41,7 +51,7 @@ class FileProcessor {
         return nil
     }
     
-    func setEdges(array: [Edge]) {
+    func setEdges(array: [EdgeSaver]) {
         guard let url = path else { return }
         
         let encoder = PropertyListEncoder()
@@ -54,12 +64,12 @@ class FileProcessor {
         }
     }
     
-    func getEdges() -> [Edge]? {
+    func getEdges() -> [EdgeSaver]? {
         guard let url = path else { return nil }
         
         if let data = try? Data(contentsOf: url) {
             let decoder = PropertyListDecoder()
-            let array: [Edge]? = try? decoder.decode([Edge].self, from: data)
+            let array: [EdgeSaver]? = try? decoder.decode([EdgeSaver].self, from: data)
             return array
         }
         return nil
