@@ -12,7 +12,8 @@ class EdgesVC: NSViewController {
     @IBOutlet var firstNodeTextField: NSTextField!
     @IBOutlet var secondNodeTextField: NSTextField!
     @IBOutlet var edgeLength: NSTextField!
-    @IBOutlet var edgeWeight: NSTextField!
+    @IBOutlet var firstEdgeWeight: NSTextField!
+    @IBOutlet var secondEdgeWeight: NSTextField!
     
     @IBOutlet var tableView: NSTableView!
     
@@ -49,8 +50,9 @@ class EdgesVC: NSViewController {
         let firstNodeName = firstNodeTextField.stringValue
         let secondNodeName = secondNodeTextField.stringValue
         let length = edgeLength.intValue
-        let weight = edgeWeight.intValue
-        guard firstNodeName != "",secondNodeName != "", length != 0, weight != 0 else {
+        let firstWeight = firstEdgeWeight.intValue
+        let secondWeight = secondEdgeWeight.intValue
+        guard firstNodeName != "",secondNodeName != "", length != 0, firstWeight != 0, secondWeight != 0 else {
             print("Error! No needed data to create edge")
             return nil
         }
@@ -58,7 +60,8 @@ class EdgesVC: NSViewController {
         return EdgeSaver(firstNodeName: firstNodeName,
                          secondNodeName: secondNodeName,
                          length: Int(length),
-                         weight: Int(weight))
+                         firstWeight: Int(firstWeight),
+                         secondWeight: Int(secondWeight))
     }
     
     func reloadEdges() {

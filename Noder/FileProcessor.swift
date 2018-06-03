@@ -12,9 +12,10 @@ struct EdgeSaver: Codable, CustomStringConvertible {
     var firstNodeName: String
     var secondNodeName: String
     var length: Int
-    var weight: Int
+    var firstWeight: Int
+    var secondWeight: Int
     var description: String {
-        return "\(firstNodeName) -> \(secondNodeName), длина \(length)"
+        return "\(firstNodeName) -> \(secondNodeName), длина \(length), вес -> \(firstWeight), <- \(secondWeight)"
     }
 }
 
